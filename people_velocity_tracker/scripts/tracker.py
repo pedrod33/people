@@ -8,7 +8,7 @@ from geometry_msgs.msg import Point, Vector3
 
 from kalman_filter import Kalman
 
-from people_msgs.msg import People, Person, PositionMeasurementArray
+from people_msgs.msg import People, PersonProxemic, PositionMeasurementArray
 
 import rospy
 
@@ -88,7 +88,7 @@ class PersonEstimate(object):
         pub.publish(m)
 
     def get_person(self):
-        p = Person()
+        p = PersonProxemic()
         p.name = self.get_id()
         p.position = self.pos.pos
         p.velocity = self.velocity()

@@ -6,7 +6,7 @@ add_message_files(
    DIRECTORY msg
    FILES
     People.msg
-    Person.msg
+    PersonProxemic.msg
     PersonStamped.msg
     PositionMeasurement.msg
     PositionMeasurementArray.msg

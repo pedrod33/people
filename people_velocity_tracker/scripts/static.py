@@ -2,7 +2,7 @@
 
 import argparse
 
-from people_msgs.msg import People, Person
+from people_msgs.msg import People, PersonProxemic
 
 import rospy
 
@@ -10,7 +10,7 @@ import rospy
 class VelocityTracker(object):
     def __init__(self, x, y, vx, vy):
         self.ppub = rospy.Publisher('/people', People, queue_size=10)
-        self.person = Person()
+        self.person = PersonProxemic()
         self.person.position.x = x
         self.person.position.y = y
         self.person.position.z = 0.5

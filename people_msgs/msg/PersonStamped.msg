@@ -1,3 +1,3 @@
 std_msgs/Header header
-people_msgs/Person person
+people_msgs/PersonProxemic person
 
